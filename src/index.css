@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn {
+    @apply px-3 py-2 bg-transparent border-2 rounded-lg w-full my-1
+}
+/* styles.css */
+
+  #mobile-menu:hover{
+    opacity: 1;
+  }
+  /* Start About section */
+  /* #About.container{
+    height: 80vh !important;
+  } */
+
+  @-moz-document url-prefix() {
+    @media screen and (max-width:550px) {
+      .firefox-specific {
+        @apply max-w-xxs text-xxs text-center;
+      padding-top: 200px;
+      }
+      .firefox-text {
+        @apply text-xs
+      }
+      .firefox-center{
+       @apply text-center pe-40
+      }
+    }
+   
+  }
+  /* Increase space for Portfolio and Contact sections */
+#Portfolio, #Contact {
+  padding: 20px !important; /* You can adjust this value */
+  margin: 20px !important;  /* You can adjust this value */
+}
+
+/* Additional spacing to ensure sufficient height */
+section {
+  min-height: 70vh !important; /* Increase this value to add more space */
+}
